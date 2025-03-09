@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <a href="#hero">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Blake Nelson</h1>
+        <p class="tagline">I like to code things.</p>
+        <p class="intro">
+            I'm a Computer Science Major and focused on optimization and efficiency. 
+            Currently, I'm building strong skills in software development
+            by earning more certifications and building more projects.
+        </p>
+        <a href="#projects" class="cta-button">Check out my work!</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>File_Sorter</h3>
+                <p>FileSorter is a Python script that organizes files within a specified directory into subfolders based on keywords. If you are looking for a more automatic approach, this tool helps keep your files organized by automatically moving them into pre-defined folders using Task Scheduler once a file is downloaded.</p>
+                <a href="https://github.com/Blake-Nelson-Code/File_Sorter" target="_blank">View Project</a>
+            </div>
+            <!-- Add more project divs as needed -->
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p><a href="mailto:blake.nelson2001@att.net"><i class="fas fa-envelope"></i> blake.nelson2001@att.net</a></p>
+        <p><a href="https://www.linkedin.com/in/blake-nelson-51142a203" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+        <p><a href="https://github.com/Blake-Nelson-Code" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Blake Nelson. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('#navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

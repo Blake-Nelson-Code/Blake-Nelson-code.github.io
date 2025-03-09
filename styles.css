@@ -1,0 +1,198 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #dcdcdc; /* Light gray text color */
+    background-color: #1e1e1e; /* Dark background color */
+}
+
+/* Navigation Bar Styles */
+#navbar {
+    background-color: #2d2d2d; /* Darker background for navbar */
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar a {
+    color: #61dafb; /* Light blue color for links */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#navbar a:hover {
+    color: #21a1f1; /* Slightly darker blue on hover */
+}
+
+/* Add padding to the top of the body to prevent content from being hidden behind the navbar */
+body {
+    padding-top: 60px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background-color: #282c34; /* Dark background for hero section */
+}
+
+#hero h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: #61dafb; /* Light blue color for heading */
+}
+
+#hero .tagline {
+    font-size: 1.5rem;
+    color: #9b9b9b; /* Light gray color for tagline */
+    margin: 10px 0;
+}
+
+#hero .intro {
+    font-size: 1.2rem;
+    color: #dcdcdc; /* Light gray color for intro text */
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+#hero .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #61dafb; /* Light blue background for button */
+    color: #1e1e1e; /* Dark text color for button */
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#hero .cta-button:hover {
+    background-color: #21a1f1; /* Slightly darker blue on hover */
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    background-color: #1e1e1e; /* Dark background for projects section */
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #61dafb; /* Light blue color for heading */
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background-color: #282c34; /* Dark background for project cards */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: #61dafb; /* Light blue color for project titles */
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #dcdcdc; /* Light gray color for project descriptions */
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #61dafb; /* Light blue color for project links */
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #21a1f1; /* Slightly darker blue on hover */
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #282c34; /* Dark background for contact section */
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #61dafb; /* Light blue color for heading */
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #dcdcdc; /* Light gray color for text */
+}
+
+#contact a {
+    color: #61dafb; /* Light blue color for links */
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #21a1f1; /* Slightly darker blue on hover */
+}
+
+#contact i {
+    margin-right: 8px; /* Add some space between the icon and the text */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d2d2d; /* Darker background for footer */
+    color: #9b9b9b; /* Light gray color for footer text */
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    #hero .tagline {
+        font-size: 1.2rem;
+    }
+
+    #hero .intro {
+        font-size: 1rem;
+    }
+
+    #projects h2 {
+        font-size: 2rem;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+}
